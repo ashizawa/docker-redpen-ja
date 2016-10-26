@@ -4,7 +4,7 @@ WORKDIR /tmp
 
 RUN locale-gen ja_JP.UTF-8
 
-ENV LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja LC_ALL=ja_JP.UTF-8 VERSION="1.7.4"
+ENV LANG=ja_JP.UTF-8 LANGUAGE=ja_JP:ja LC_ALL=ja_JP.UTF-8 VERSION="1.7.6"
 
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
